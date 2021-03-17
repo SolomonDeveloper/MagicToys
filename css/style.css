@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh; 
+    background-color: #000;
+    overflow: hidden;
+}
+
+.hero-section{
+    position: relative;
+    object-fit: cover;
+    opacity: 0.5;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav-links{
+    position: absolute;
+    margin: 0.5rem 2rem;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 5vh;
+    list-style: none;
+}
+
+.nav-link{
+    font-size: 1.5rem;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1{
+    font-size: 5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.pascoa{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    color: white;
+}
+
+
+
+.countdown{
+    padding: 0 2rem;
+}
+
+.grid{
+    display: grid;
+    grid-gap: 16px;
+    padding: 16px;
+}
+
+.col{
+    height: 100%;
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.feltro{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.description{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 3rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media only screen and (max-width: 793px){
+    .title{
+        text-align: center;
+    }
+    .title h1{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .grid{
+    grid-template-columns: repeat(2, 2fr);
+    }
+    .col{
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 960px){
+    .grid{
+    grid-template-columns: repeat(3, 2fr);
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .grid{
+    grid-template-columns: repeat(4, 2fr);
+    }
+}
+
+@media only screen and (max-width: 337px){
+    .description{
+        font-size: 2rem;
+    }
+}
