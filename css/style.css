@@ -198,10 +198,15 @@ footer{
     .description{
         font-size: 2rem;
     }
-}
-
-@media only screen and (max-width: 670px){
-    .footercontent{
-   
+    .btnSocialMedia{
+        overflow: hidden;
+        width: 75px;
+        height: 20px;
+    }
+    .contato{
+        font-size: 0.6rem;
+    }
+    .tel{
+        font-size: 0.5rem;
     }
 }
