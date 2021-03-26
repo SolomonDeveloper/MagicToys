@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.product{
+    padding: 10px;
+    text-align: center;
+}
+
+.feltro{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-produto{
+    height: 200px;
+}
+
+.info-produto{
+    text-align: center;
+}
+
+.info-nome{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.info-valor{
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: pink;
+    font-weight: 1000;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}

@@ -109,15 +109,15 @@ footer{
 
 .footercontent{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     height: 100%;
     padding: 0 2rem;
 }
 
 .footerbox{
-    text-align: center;
-    height: 100%;
+   margin: 0 1rem;
 }
 
 .footerbox > ul{
