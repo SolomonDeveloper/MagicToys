@@ -1,3 +1,4 @@
+/*
 const daysLeft = document.getElementById("days-count");
 const hoursLeft = document.getElementById("hours-count");
 const minutesLeft = document.getElementById("minutes-count");
@@ -28,3 +29,11 @@ let formatTime = time =>{
 countdown();
 
 setInterval(countdown, 1000);
+
+*/
+
+let bemvindo = document.getElementById("bemvindo");
+
+function welcome(){
+    alert("Bem vindo! página em construção...");
+}
