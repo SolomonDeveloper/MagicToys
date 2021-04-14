@@ -1,3 +1,5 @@
+
+const navbtn = () =>{
 $(".btnbaby").click( () =>{
     $(".baby").show();
     $(".decor").hide();
@@ -16,3 +18,6 @@ $(".btngift").click( () =>{
     $(".gift").show();
 
 })
+}
+
+navbtn();
