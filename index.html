@@ -6,72 +6,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/products.css">
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Magic Toys</title>
 </head>
 
-<body onload="welcome()">
-    <header>
-        <img src="header.jpg" class="hero-section" />
-        <nav>
-            <div class="openmenu"><i class="fas fa-bars"></i> </div>
-            <ul class="nav-links">
-                <li><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#" class="nav-link">Produtos</a></li>
-                <li><a href="#" class="nav-link">Sobre</a></li>
-                <li><a href="#" class="nav-link">Contato</a></li>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <span id="icon" class="navbar-brand">MAGIC TOYS</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="myNav" class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#home" data-toggle="tab">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#price" data-toggle="tab">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#about" data-toggle="tab">Sobre</a></li>
             </ul>
-        </nav>
-        <div class="title">
-            <h1>Magic Toys</h1>
-        </div>
-
-    </header>
-
-    <nav>
-        <div class="grid">
-            <div class="col">
-                <a href="baby.html" class="products"><img src="./img-navlink/baby.jpg" class="feltro"></a>
-                <h3 class="description">Bebê</h3>
-            </div>
-            <div class="col">
-                <a href="products.html" class="products"><img src="./img-navlink/boneco.jpg" class="feltro" /></a>
-                <h3 class="description">Bonequinhos</h3>
-            </div>
-            <div class="col">
-                <a href="products.html" class="products"><img src="./img-navlink/decoração.jpg" class="feltro" /></a>
-                <h3 class="description">Decoração</h3>
-            </div>
-            <div class="col">
-                <a href="products.html" class="products"><img src="./img-navlink/gift.jpg" class="feltro" /></a>
-                <h3 class="description">Presente</h3>
-            </div>
         </div>
     </nav>
+</header>
 
-    <footer>
-       <div class="footercontent">
-           <div class="footerbox">
-                <ul>
-                    <h4>Redes Sociais</h4>
-                    <a href="https://www.instagram.com/magic_toys2/" target="_blank"><button class="btnSocialMedia" id="instagram">Instagram</button><li></li></a>
-                    <a href="https://shopee.com.br/palomamozer?smtt=0.0.9" target="_blank"><button class="btnSocialMedia" id="shopee">Shopee</button><li></li></a>
-                    <a href="https://www.elo7.com.br/magictoys" target="_blank"><button class="btnSocialMedia" id= "elo7">Elo7</button><li></li></a>    
-                </ul>
-           </div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: #000;">
 
-           <div class="footerbox">
-            <ul>
-                <h4>Informações extras</h4>
-                <li class="contato tel">Telefone: (21) 98597-0470</li>
-                <li class="contato">Cidade: Teresópolis/RJ</li>
-            </ul>
-       </div>
-   </div>
-       </div>
-    </footer>
-    <script src="./js/index.js"></script>
+    <ul class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ul>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="mgctoys-carousel-item" style="height: 686px;">
+                <img id="header1" src="imagens/header.jpg" alt="Magic Toys">
+                <div class="carousel-caption d-flex justify-content-center align-items-center flex-column"
+                    style="height: 100%;">
+                    <h5 class="title">Magic Toys</h5>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="mgctoys-carousel-item" style="height: 686px;">
+                <img id="header2" src="imagens/baby playing.jpg">
+                <div class="carousel-caption d-flex justify-content-center align-items-center flex-column"
+                    style="height: 100%;">
+                    <h5 class="title">Compromisso com a qualidade</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item" style="height: 686px;">
+            <img id="header3" src="imagens/family.jpg">
+            <div class="carousel-caption d-flex justify-content-center align-items-center flex-column"
+                style="height: 100%;">
+                <h5 class="title">Compromisso com a sua família</h5>
+            </div>
+        </div>
+    </div>
+
+    <a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+
+    <a href="#myCarousel" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+
+<section class="container text-center my-5">
+    <div class="row">
+        <!-- Gallery item -->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="bg-white rounded shadow-sm"><img src="boneco feltros/ursinho.jpg" alt=""
+                    class="img-fluid card-img-top">
+                <div class="p-4">
+                    <h5> <a href="#" class="text-dark">Ursinho</a></h5>
+                    <p class="small text-muted mb-0">Digite o testo que quiser</p>
+                    <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                        <button class=" btn btn-info"><span class="text-light">Em alta</span></button>
+                        <button class=" btn btn-success"><a href="#" class="text-light">R$12,00</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="bg-white rounded shadow-sm"><img src="boneco feltros/elefantinho.jpg" alt=""
+                    class="img-fluid card-img-top">
+                <div class="p-4">
+                    <h5> <a href="#" class="text-dark">Elefantinho</a></h5>
+                    <p class="small text-muted mb-0">Digite o texto que quiser</p>
+                    <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                        <button class=" btn btn-danger"><span class="text-light">Novo</span></button>
+                        <button class=" btn btn-success"><a href="#" class="text-light">R$12,00</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="bg-white rounded shadow-sm"><img src="boneco feltros/hello-kitty.jpg" alt=""
+                    class="img-fluid card-img-top">
+                <div class="p-4">
+                    <h5> <a href="#" class="text-dark">Hello Kitty</a></h5>
+                    <p class="small text-muted mb-0">Digite o texto que quiser</p>
+                    <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                        <button class=" btn btn-danger"><span class="text-light">Novo</span></button>
+                        <button class=" btn btn-success"><a href="#" class="text-light">R$12,00</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="bg-white rounded shadow-sm"><img src="boneco feltros/mobile.jpg" alt=""
+                    class="img-fluid card-img-top">
+                <div class="p-4">
+                    <h5> <a href="#" class="text-dark">Mobile</a></h5>
+                    <p class="small text-muted mb-0">Digite o texto que quiser</p>
+                    <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                        <button class=" btn btn-danger"><span class="text-light">Novo</span></button>
+                        <button class=" btn btn-success"><a href="#" class="text-light">R$12,00</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+</section>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="./js/index.js"></script>
 </body>
+
 </html>
