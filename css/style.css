@@ -21,16 +21,27 @@
     opacity: 0.5;
 }
 
+.nav-link{
+    font-size: 20px;
+}
+
 .title{
     font-size: 80px;
 }
 
-.feltro-section{
-    max-width: 200px;
+.baby, .decor{
+    display: none;
 }
 
 @media (max-width: 583px) {
     .title{
         font-size: 40px;
     } 
+}
+
+@media (max-width: 376px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
 }
